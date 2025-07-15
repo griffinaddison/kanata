@@ -69,8 +69,8 @@ configuration entries.
 ;; )
 
 (defalias
-  cap (tap-hold-release 200 200 esc lctl)
-  spacefn (tap-hold-release 200 200 spc (layer-while-held spacefn))
+  cap (tap-hold-press 200 9999 esc lctl)
+  spacefn (tap-hold-release-keys 200 9999 spc (layer-while-held spacefn) (lsft rsft))
 )
 
 (deflayer spacefn
